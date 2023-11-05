@@ -33,7 +33,7 @@ export const Navigation = () => {
 
             <Routes>
                 {routes.map(({path, Component}) => (
-                        <Route path={path} element={<Component/>} />
+                        <Route key={path} path={path} element={<Component/>} />
                 ))}
 
                 {/* <Route path='lazy1' element={<LazyPage1/>} />
